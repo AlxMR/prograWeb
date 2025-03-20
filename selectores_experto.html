@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retos Expertos</title>
+    <style>
+        /* Estilo para resaltar las primeras tres palabras */
+        .reto-16 p::first-line {
+            font-weight: bold; /* Resalta la primera línea */
+        }
+
+        /* Clase para resaltar las primeras tres palabras */
+        .resaltar {
+            color: red; /* Cambia el color de las primeras tres palabras */
+            font-weight: bold; /* Aplica negrita */
+        }
+
+        /* Estilo para resaltar elementos que contienen la palabra "importante" */
+        .resaltar-17 {
+            background-color: yellow; /* Fondo amarillo */
+            font-weight: bold; /* Texto en negrita */
+        }
+
+        /* Reto 18: Cambia el color del borde de un input cuando el usuario escribe en él */
+        .reto-18 input:focus {
+            border: 2px solid blue;
+        }
+
+        /* Reto 19: Resalta todos los párrafos que sean el primer hijo de su contenedor */
+        .reto-19 p:first-of-type {
+            background-color: lightyellow;
+        }
+
+        /* Reto 20: Selecciona y cambia el color de cada tercer elemento en una lista de 10 elementos */
+        .reto-20 li:nth-child(3n) {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Retos Expertos</h1>
+
+    <!-- Reto 16 -->
+    <section class="reto-16">
+        <h2>16. Resalta las primeras tres palabras de cada párrafo</h2>
+        <p>Este es un párrafo de ejemplo para resaltar las primeras palabras.</p>
+    </section>
+    <script>
+        // Función para resaltar las primeras tres palabras de cada párrafo
+        function resaltarPrimerasTresPalabras() {
+            const parrafos = document.querySelectorAll('.reto-16 p'); // Selecciona todos los párrafos
+
+            parrafos.forEach(parrafo => {
+                const texto = parrafo.textContent; // Obtiene el texto del párrafo
+                const palabras = texto.split(' '); // Divide el texto en palabras
+
+                if (palabras.length >= 3) {
+                    // Resalta las primeras tres palabras
+                    const primerasTres = palabras.slice(0, 3).join(' ');
+                    const resto = palabras.slice(3).join(' ');
+
+                    // Aplica el resaltado
+                    parrafo.innerHTML = `<span class="resaltar">${primerasTres}</span> ${resto}`;
+                }
+            });
+        }
+
+        // Ejecuta la función al cargar la página
+        window.onload = resaltarPrimerasTresPalabras;
+    </script>
+
+    <!-- Reto 17 -->
+    <section class="reto-17">
+        <h2>17. Aplica un estilo a todos los elementos que contienen la palabra ‘importante’ en su texto</h2>
+        <p>Este párrafo es importante.</p>
+        <p>Este párrafo no lo es.</p>
+    </section>
+    <script>
+        // Función para resaltar elementos que contienen la palabra "importante"
+        function resaltarPalabraImportante() {
+            const parrafos = document.querySelectorAll('.reto-17 p'); // Selecciona todos los párrafos
+
+            parrafos.forEach(parrafo => {
+                const texto = parrafo.textContent.toLowerCase(); // Obtiene el texto en minúsculas
+
+                // Verifica si el texto contiene la palabra "importante"
+                if (texto.includes('importante')) {
+                    parrafo.classList.add('resaltar-17'); // Aplica la clase .resaltar
+                }
+            });
+        }
+
+        // Ejecuta la función al cargar la página
+        window.onload = resaltarPalabraImportante;
+    </script>
+
+    <!-- Reto 18 -->
+    <section class="reto-18">
+        <h2>18. Cambia el color del borde de un input cuando el usuario escribe en él</h2>
+        <input type="text" placeholder="Escribe aquí">
+    </section>
+
+    <!-- Reto 19 -->
+    <section class="reto-19">
+        <h2>19. Resalta todos los párrafos que sean el primer hijo de su contenedor</h2>
+        <div>
+            <p>Primer párrafo</p>
+            <p>Segundo párrafo</p>
+        </div>
+    </section>
+
+    <!-- Reto 20 -->
+    <section class="reto-20">
+        <h2>20. Selecciona y cambia el color de cada tercer elemento en una lista de 10 elementos</h2>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+            <li>Elemento 6</li>
+            <li>Elemento 7</li>
+            <li>Elemento 8</li>
+            <li>Elemento 9</li>
+            <li>Elemento 10</li>
+        </ul>
+    </section>
+</body>
+</html>

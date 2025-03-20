@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retos CSS</title>
+    <style>
+        /* Retos Básicos */
+        .basico-1 ul li:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        .basico-2 ul li:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        .basico-3 ul li:first-child {
+            color: red;
+        }
+        .basico-3 ul li:last-child {
+            color: blue;
+        }
+
+        .basico-4 div p:not(:first-child) {
+            color: gray;
+        }
+
+        .basico-5 li:nth-child(3) {
+            color: green;
+        }
+
+        /* Retos Intermedios */
+        .intermedio-6 input:required {
+            border: 2px solid red;
+        }
+
+        .intermedio-7 a:visited {
+            color: purple;
+        }
+        .intermedio-7 a:hover {
+            color: orange;
+        }
+
+        .intermedio-8 tr td:nth-child(2) {
+            background-color: yellow;
+        }
+
+        .intermedio-9 p:has(a) {
+            background-color: lightgreen;
+        }
+
+        .intermedio-10 .contenedor div:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        /* Retos Avanzados */
+        .avanzado-11 button:disabled {
+            opacity: 0.5;
+        }
+
+        .avanzado-12 li:empty {
+            display: none;
+        }
+
+        .avanzado-13 tr td:last-child {
+            background-color: lightblue;
+        }
+
+        .avanzado-14 tr:nth-child(n+4):nth-child(even) {
+            background-color: lightgray;
+        }
+
+        .avanzado-15 li:not(:last-child) {
+            color: gray;
+        }
+
+        /* Retos Experto */
+        .experto-16 p::first-letter {
+            color: red;
+        }
+        .experto-16 p::first-line {
+            font-weight: bold;
+        }
+
+        .experto-17 p:contains('importante') {
+            background-color: yellow;
+        }
+
+        .experto-18 input:focus {
+            border: 2px solid blue;
+        }
+
+        .experto-19 p:first-of-type {
+            background-color: lightyellow;
+        }
+
+        .experto-20 li:nth-child(3n) {
+            color: purple;
+        }
+    </style>
+</head>
+<body>
+    <h1>Retos CSS</h1>
+
+    <!-- Retos Básicos -->
+    <section class="basico-1">
+        <h2>1. Resalta los elementos impares</h2>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+    </section>
+
+    <section class="basico-2">
+        <h2>2. Resalta los elementos pares</h2>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+    </section>
+
+    <section class="basico-3">
+        <h2>3. Estiliza el primer y último elemento</h2>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+    </section>
+
+    <section class="basico-4">
+        <h2>4. Selecciona todos los párrafos excepto el primero</h2>
+        <div>
+            <p>Primer párrafo</p>
+            <p>Segundo párrafo</p>
+            <p>Tercer párrafo</p>
+        </div>
+    </section>
+
+    <section class="basico-5">
+        <h2>5. Aplica un color especial al tercer elemento de una lista</h2>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+    </section>
+
+    <!-- Retos Intermedios -->
+    <section class="intermedio-6">
+        <h2>6. Estiliza los campos de entrada requeridos en un formulario</h2>
+        <form>
+            <input type="text" placeholder="Nombre" required>
+            <input type="email" placeholder="Email" required>
+            <input type="text" placeholder="Opcional">
+        </form>
+    </section>
+
+    <section class="intermedio-7">
+        <h2>7. Diferencia entre enlaces visitados y no visitados</h2>
+        <a href="#visitado">Enlace visitado</a>
+        <a href="#no-visitado">Enlace no visitado</a>
+    </section>
+
+    <section class="intermedio-8">
+        <h2>8. Selecciona el segundo hijo de cada fila en una tabla</h2>
+        <table>
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+                <td>Celda 3</td>
+            </tr>
+            <tr>
+                <td>Celda 4</td>
+                <td>Celda 5</td>
+                <td>Celda 6</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="intermedio-9">
+        <h2>9. Selecciona todos los párrafos que tengan un enlace dentro</h2>
+        <div>
+            <p>Este es un párrafo sin enlace.</p>
+            <p>Este es un párrafo con <a href="#">enlace</a>.</p>
+        </div>
+    </section>
+
+    <section class="intermedio-10">
+        <h2>10. Resalta los elementos impares dentro de un contenedor específico</h2>
+        <div class="contenedor">
+            <div>Elemento 1</div>
+            <div>Elemento 2</div>
+            <div>Elemento 3</div>
+            <div>Elemento 4</div>
+        </div>
+    </section>
+
+    <!-- Retos Avanzados -->
+    <section class="avanzado-11">
+        <h2>11. Selecciona solo los botones deshabilitados y cambia su opacidad</h2>
+        <button>Botón activo</button>
+        <button disabled>Botón deshabilitado</button>
+    </section>
+
+    <section class="avanzado-12">
+        <h2>12. Oculta los elementos vacíos dentro de una lista</h2>
+        <ul>
+            <li>Elemento 1</li>
+            <li></li>
+            <li>Elemento 3</li>
+            <li></li>
+        </ul>
+    </section>
+
+    <section class="avanzado-13">
+        <h2>13. Selecciona el último hijo de cada fila de una tabla y resáltalo</h2>
+        <table>
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+                <td>Celda 3</td>
+            </tr>
+            <tr>
+                <td>Celda 4</td>
+                <td>Celda 5</td>
+                <td>Celda 6</td>
+            </tr>
+        </table>
+    </section>
+
+    <section class="avanzado-14">
+        <h2>14. Aplica estilos alternos a las filas de una tabla, pero solo después de la tercera fila</h2>
+        <table>
+            <tr><td>Fila 1</td></tr>
+            <tr><td>Fila 2</td></tr>
+            <tr><td>Fila 3</td></tr>
+            <tr><td>Fila 4</td></tr>
+            <tr><td>Fila 5</td></tr>
+        </table>
+    </section>
+
+    <section class="avanzado-15">
+        <h2>15. Selecciona todos los elementos de una lista, excepto el último</h2>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+    </section>
+
+    <!-- Retos Experto -->
+    <section class="experto-16">
+        <h2>16. Resalta las primeras tres palabras de cada párrafo</h2>
+        <p>Este es un párrafo de ejemplo para resaltar las primeras palabras.</p>
+    </section>
+
+    <section class="experto-17">
+        <h2>17. Aplica un estilo a todos los elementos que contienen la palabra ‘importante’ en su texto</h2>
+        <p>Este párrafo es importante.</p>
+        <p>Este párrafo no lo es.</p>
+    </section>
+
+    <section class="experto-18">
+        <h2>18. Cambia el color del borde de un input cuando el usuario escribe en él</h2>
+        <input type="text" placeholder="Escribe aquí">
+    </section>
+
+    <section class="experto-19">
+        <h2>19. Resalta todos los párrafos que sean el primer hijo de su contenedor</h2>
+        <div>
+            <p>Primer párrafo</p>
+            <p>Segundo párrafo</p>
+        </div>
+    </section>
+
+    <section class="experto-20">
+        <h2>20. Selecciona y cambia el color de cada tercer elemento en una lista de 10 elementos</h2>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+            <li>Elemento 5</li>
+            <li>Elemento 6</li>
+            <li>Elemento 7</li>
+            <li>Elemento 8</li>
+            <li>Elemento 9</li>
+            <li>Elemento 10</li>
+        </ul>
+    </section>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retos Básicos</title>
+    <style>
+        /* Reto 1: Resalta los elementos impares */
+        .reto-1 ul li:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        /* Reto 2: Resalta los elementos pares */
+        .reto-2 ul li:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        /* Reto 3: Estiliza el primer y último elemento */
+        .reto-3 ul li:first-child {
+            color: red;
+        }
+        .reto-3 ul li:last-child {
+            color: blue;
+        }
+
+        /* Reto 4: Selecciona todos los párrafos excepto el primero */
+        .reto-4 div p:not(:first-child) {
+            color: gray;
+        }
+
+        /* Reto 5: Aplica un color especial al tercer elemento de una lista */
+        .reto-5 li:nth-child(3) {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Retos Básicos</h1>
+
+    <!-- Reto 1 -->
+    <section class="reto-1">
+        <h2>1. Resalta los elementos impares</h2>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+    </section>
+
+    <!-- Reto 2 -->
+    <section class="reto-2">
+        <h2>2. Resalta los elementos pares</h2>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+    </section>
+
+    <!-- Reto 3 -->
+    <section class="reto-3">
+        <h2>3. Estiliza el primer y último elemento</h2>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+    </section>
+
+    <!-- Reto 4 -->
+    <section class="reto-4">
+        <h2>4. Selecciona todos los párrafos excepto el primero</h2>
+        <div>
+            <p>Primer párrafo</p>
+            <p>Segundo párrafo</p>
+            <p>Tercer párrafo</p>
+        </div>
+    </section>
+
+    <!-- Reto 5 -->
+    <section class="reto-5">
+        <h2>5. Aplica un color especial al tercer elemento de una lista</h2>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+    </section>
+</body>
+</html>

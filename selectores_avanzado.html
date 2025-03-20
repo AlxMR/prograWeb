@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retos Avanzados</title>
+    <style>
+        /* Reto 11: Selecciona solo los botones deshabilitados y cambia su opacidad */
+        .reto-11 button:disabled {
+            opacity: 0.5;
+        }
+
+        /* Reto 12: Oculta los elementos vacíos dentro de una lista */
+        .reto-12 li:empty {
+            display: none;
+        }
+
+        /* Reto 13: Selecciona el último hijo de cada fila de una tabla y resáltalo */
+        .reto-13 tr td:last-child {
+            background-color: lightblue;
+        }
+
+        /* Reto 14: Aplica estilos alternos a las filas de una tabla, pero solo después de la tercera fila */
+        .reto-14 tr:nth-child(n+4) {
+            background-color: lightgray;
+        }
+
+        /* Reto 15: Selecciona todos los elementos de una lista, excepto el último */
+        .reto-15 li:not(:last-child) {
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Retos Avanzados</h1>
+
+    <!-- Reto 11 -->
+    <section class="reto-11">
+        <h2>11. Selecciona solo los botones deshabilitados y cambia su opacidad</h2>
+        <button>Botón activo</button>
+        <button disabled>Botón deshabilitado</button>
+    </section>
+
+    <!-- Reto 12 -->
+    <section class="reto-12">
+        <h2>12. Oculta los elementos vacíos dentro de una lista</h2>
+        <ul>
+            <li>Elemento 1</li>
+            <li></li>
+            <li>Elemento 3</li>
+            <li></li>
+        </ul>
+    </section>
+
+    <!-- Reto 13 -->
+    <section class="reto-13">
+        <h2>13. Selecciona el último hijo de cada fila de una tabla y resáltalo</h2>
+        <table>
+            <tr>
+                <td>Celda 1</td>
+                <td>Celda 2</td>
+                <td>Celda 3</td>
+            </tr>
+            <tr>
+                <td>Celda 4</td>
+                <td>Celda 5</td>
+                <td>Celda 6</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Reto 14 -->
+    <section class="reto-14">
+        <h2>14. Aplica estilos alternos a las filas de una tabla, pero solo después de la tercera fila</h2>
+        <table>
+            <tr><td>Fila 1</td></tr>
+            <tr><td>Fila 2</td></tr>
+            <tr><td>Fila 3</td></tr>
+            <tr><td>Fila 4</td></tr>
+            <tr><td>Fila 5</td></tr>
+        </table>
+    </section>
+
+    <!-- Reto 15 -->
+    <section class="reto-15">
+        <h2>15. Selecciona todos los elementos de una lista, excepto el último</h2>
+        <ul>
+            <li>Elemento 1</li>
+            <li>Elemento 2</li>
+            <li>Elemento 3</li>
+            <li>Elemento 4</li>
+        </ul>
+    </section>
+</body>
+</html>
