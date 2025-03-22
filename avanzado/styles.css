@@ -1,0 +1,24 @@
+/* Reto 11: Selecciona solo los botones deshabilitados y cambia su opacidad */
+.reto-11 button:disabled {
+    opacity: 0.5;
+}
+
+/* Reto 12: Oculta los elementos vacíos dentro de una lista */
+.reto-12 li:empty {
+    display: none;
+}
+
+/* Reto 13: Selecciona el último hijo de cada fila de una tabla y resáltalo */
+.reto-13 tr td:last-child {
+    background-color: lightblue;
+}
+
+/* Reto 14: Aplica estilos alternos a las filas de una tabla, pero solo después de la tercera fila */
+.reto-14 tr:nth-child(n+4) {
+    background-color: lightgray;
+}
+
+/* Reto 15: Selecciona todos los elementos de una lista, excepto el último */
+.reto-15 li:not(:last-child) {
+    color: gray;
+}

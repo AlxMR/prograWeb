@@ -1,0 +1,27 @@
+        /* Reto 1: Resalta los elementos impares */
+        .reto-1 ul li:nth-child(odd) {
+            background-color: lightgray;
+        }
+
+        /* Reto 2: Resalta los elementos pares */
+        .reto-2 ul li:nth-child(even) {
+            background-color: lightblue;
+        }
+
+        /* Reto 3: Estiliza el primer y último elemento */
+        .reto-3 ul li:first-child {
+            color: red;
+        }
+        .reto-3 ul li:last-child {
+            color: blue;
+        }
+
+        /* Reto 4: Selecciona todos los párrafos excepto el primero */
+        .reto-4 div p:not(:first-child) {
+            color: gray;
+        }
+
+        /* Reto 5: Aplica un color especial al tercer elemento de una lista */
+        .reto-5 li:nth-child(3) {
+            color: green;
+        }

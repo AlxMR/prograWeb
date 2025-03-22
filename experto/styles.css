@@ -1,0 +1,31 @@
+        /* Estilo para resaltar las primeras tres palabras */
+        .reto-16 p::first-line {
+            font-weight: bold; /* Resalta la primera línea */
+        }
+
+        /* Clase para resaltar las primeras tres palabras */
+        .resaltar {
+            color: red; /* Cambia el color de las primeras tres palabras */
+            font-weight: bold; /* Aplica negrita */
+        }
+
+        /* Estilo para resaltar elementos que contienen la palabra "importante" */
+        .resaltar-17 {
+            background-color: yellow; /* Fondo amarillo */
+            font-weight: bold; /* Texto en negrita */
+        }
+
+        /* Reto 18: Cambia el color del borde de un input cuando el usuario escribe en él */
+        .reto-18 input:focus {
+            border: 2px solid blue;
+        }
+
+        /* Reto 19: Resalta todos los párrafos que sean el primer hijo de su contenedor */
+        .reto-19 p:first-of-type {
+            background-color: lightyellow;
+        }
+
+        /* Reto 20: Selecciona y cambia el color de cada tercer elemento en una lista de 10 elementos */
+        .reto-20 li:nth-child(3n) {
+            color: purple;
+        }
